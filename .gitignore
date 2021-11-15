@@ -1,3 +1,6 @@
+gop_autogen*.go
+.gop/
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
