@@ -7,7 +7,7 @@ Gobang - a game powered by Go+ Builder
 
 ### Gobang
 
-![Screen Shot](assets/7.png)
+<img src="assets/7.png" width="480">
 
 ### How to run
 
