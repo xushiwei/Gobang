@@ -85,5 +85,3 @@ onMsg "confirm to put chess", => {
 		broadcast "put chess done", true
 	}
 }
-
-run "res", {Title: "Gobang (by Go+)"}
