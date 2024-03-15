@@ -153,8 +153,6 @@ func (this *Game) MainEntry() {
 			this.Broadcast__1("put chess done", true)
 		}
 	})
-//line main.spx:89:1
-	spx.Gopt_Game_Run(this, "res", &spx.Config{Title: "Gobang (by Go+)"})
 }
 func (this *Game) Main() {
 	spx.Gopt_Game_Main(this, new(Button4), new(Calf1), new(Chess), new(CurrentChess))

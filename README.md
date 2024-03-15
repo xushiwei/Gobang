@@ -1,4 +1,4 @@
-Gobang - a game powered by Go+ spx game engine
+Gobang - a game powered by Go+ Builder
 =========
 
 [![Language](https://img.shields.io/badge/language-Go+-blue.svg)](https://github.com/goplus/gop)
@@ -7,4 +7,9 @@ Gobang - a game powered by Go+ spx game engine
 
 ### Gobang
 
-TODO
+![Screen Shot](assets/7.png)
+
+### How to run
+
+- Install Go+. See https://github.com/goplus/gop#how-to-install.
+- gop run .
