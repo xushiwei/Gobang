@@ -1,11 +1,8 @@
 module github.com/xushiwei/Gobang
 
-go 1.16
+go 1.18
 
-require (
-	github.com/goplus/gop v1.0.22
-	github.com/goplus/spx v1.0.0-beta1
-)
+require github.com/goplus/spx v1.0.1-0.20240315020847-6533ccf914e4
 
 replace (
 	github.com/hajimehoshi/oto => github.com/hajimehoshi/oto v1.0.1
