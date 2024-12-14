@@ -12,19 +12,19 @@ const (
 )
 
 type Button4 struct {
-	spx.Sprite
+	spx.SpriteImpl
 	*Game
 }
 type Calf1 struct {
-	spx.Sprite
+	spx.SpriteImpl
 	*Game
 }
 type Chess struct {
-	spx.Sprite
+	spx.SpriteImpl
 	*Game
 }
 type CurrentChess struct {
-	spx.Sprite
+	spx.SpriteImpl
 	*Game
 }
 type Game struct {
@@ -148,7 +148,7 @@ func (this *Game) MainEntry() {
 //line main.spx:83:1
 			this.checkHasWon()
 //line main.spx:84:1
-			spx.Gopt_Sprite_Clone__0(&this.Chess)
+			spx.Gopt_SpriteImpl_Clone__0(&this.Chess)
 //line main.spx:85:1
 			this.Broadcast__1("put chess done", true)
 		}
@@ -194,10 +194,10 @@ func (this *Calf1) Main() {
 //line Calf1.spx:7:1
 		if this.currentPlayer == _Black {
 //line Calf1.spx:8:1
-			this.Say("The black side won!", 3)
+			this.Say__1("The black side won!", 3)
 		} else {
 //line Calf1.spx:10:1
-			this.Say("The white side won!", 3)
+			this.Say__1("The white side won!", 3)
 		}
 //line Calf1.spx:12:1
 		spx.Exit__1()
@@ -213,7 +213,7 @@ func (this *Chess) Main() {
 //line Chess.spx:2:1
 		this.SetXYpos(float64(this.currentCol)*17.7-159, float64(this.currentRow)*-17.7+159)
 //line Chess.spx:3:1
-		this.SetCostume(this.currentPlayer - 1)
+		this.SetCostume__2(this.currentPlayer - 1)
 //line Chess.spx:4:1
 		this.currentPlayer = _BlackAndWhite - this.currentPlayer
 //line Chess.spx:5:1
@@ -240,7 +240,7 @@ func (this *CurrentChess) Main() {
 //line CurrentChess.spx:10:1
 		this.SetXYpos(float64(this.currentCol)*17.7-159, float64(this.currentRow)*-17.7+159)
 //line CurrentChess.spx:11:1
-		this.SetCostume(this.currentPlayer - 1)
+		this.SetCostume__2(this.currentPlayer - 1)
 //line CurrentChess.spx:12:1
 		this.Show()
 	})
